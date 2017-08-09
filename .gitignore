@@ -1,0 +1,6 @@
+*.pyc
+.idea/
+static/css/lib/
+static/fonts/lib/
+static/js/lib/
+
