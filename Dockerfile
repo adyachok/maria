@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Andras Gyacsok "andras,dyacsok@boehringer-ingelheim.com"
+MAINTAINER Andras Gyacsok "andras.dyacsok@boehringer-ingelheim.com"
 RUN apt-get update -y
 RUN apt-get install -y python-pip python-dev build-essential
 COPY . /app
