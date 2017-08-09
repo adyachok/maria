@@ -46,4 +46,4 @@ def health_data_generator(mins):
         health_data.append(data)
     return health_data
 
-app.run('localhost', 8080, debug=True)
+app.run('0.0.0.0', 8080, debug=True)
