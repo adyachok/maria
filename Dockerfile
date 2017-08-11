@@ -5,7 +5,7 @@ RUN apt-get update -y && \
    pip install -U pip ansible    
 COPY . /app
 WORKDIR /app
-RUN pip install -r requirements.txt
+#RUN pip install -r requirements.txt
 RUN mkdir downloads && cd downloads && \
     curl https://code.jquery.com/jquery-3.2.1.min.js && \
     curl https://github.com/d3/d3/releases/download/v4.10.0/d3.zip && \
