@@ -7,12 +7,7 @@ node("master") {
       }
       stage("test") {
          sh "pwd"
-         FIND = sh (
-             script: 'find . -iname app.py',
-             returnStdout: true
-         ).trim()
-         echo "FIND: ${FIND}"
-
+         sh "cd ./files/src"
          sh "python tests.py"
       }
     } catch(error) {
