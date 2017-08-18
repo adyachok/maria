@@ -7,8 +7,8 @@ node("master") {
       }
       stage("test") {
          sh "pwd"
-         dir ('files') {
-             sh "cd src"
+         dir ('./files/src') {
+             sh "pwd"
              sh "python tests.py"
          }
 
