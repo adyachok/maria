@@ -9,7 +9,7 @@ node("master") {
          sh "pwd"
          dir ('./files/src') {
              sh "pwd"
-             sh "python tests.py"
+             sh "python files/src/tests.py"
          }
 
       }
