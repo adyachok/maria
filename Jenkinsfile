@@ -24,7 +24,7 @@ node("master") {
 
       }
     } catch(error) {
-
+      echo error
     } finally {
 
     }
