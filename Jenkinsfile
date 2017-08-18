@@ -10,7 +10,7 @@ node("master") {
          echo "Build stage"
       }
       stage("test") {
-             sh "pwd; la -l; python files/src/tests.py"
+             sh "python files/src/tests.py"
       }
     } catch(error) {
       echo "${error}"
