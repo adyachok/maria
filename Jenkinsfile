@@ -7,7 +7,7 @@ node("master") {
       }
       stage("test") {
          sh "pwd"
-         sh "cd ./files/src"
+         sh "cd ./maria/files/src"
          sh "python tests.py"
       }
     } catch(error) {
