@@ -2,6 +2,17 @@
 
 node("master") {
     try {
+
+       stage('Checkout SCM'){
+                  checkout([
+                      $class: 'GitSCM',
+                      branches: [[name: "refs/heads/${env.BRANCH_NAME}"]],
+                      extensions: [[$class: 'LocalBranch']],
+                      userRemoteConfigs: scm.userRemoteConfigs,
+                      doGenerateSubmoduleConfigurations: false,
+                      submoduleCfg: []
+                  ])
+       }
       stage("build") {
          echo "Build stage"
       }
