@@ -8,7 +8,7 @@ node("master") {
       stage("test") {
          sh "python tests.py"
       }
-    } catch {
+    } catch(error) {
 
     } finally {
 
